@@ -8,8 +8,6 @@ arrayUno = [],
 
 function datos() {
 
-
-
   arrayUno = [ // creo un array multidimensional.
 
     ["Ana", "Estamos de vacaciones, llegaremos para Navidad", dia],
@@ -34,4 +32,23 @@ function datos() {
 }
 
 
+function addPost() {
+
+  let user = document.getElementById("user").value,
+    texto = document.getElementById("text").value,
+
+    dia = fecha.toLocaleString();
+
+  arrayUno.push( [user, texto, dia] );
+
+
+  document.getElementById("user").value = "";
+  document.getElementById("text").value = "";
+
+  console.log(arrayUno);
+
+}
+
+
 datos() ;
+d.getElementById("post").addEventListener("click", addPost);
