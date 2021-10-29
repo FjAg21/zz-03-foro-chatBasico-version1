@@ -17,6 +17,40 @@ html {
   line-height: 1.4;
 }
 
+
+
+/* --------------------------------------------------------- Mi Estilo*/
+
+
+header{
+  text-align: center;
+  background-color: aquamarine;
+}
+
+thead {
+  font-size: 21px;
+  background-color: aquamarine;
+}
+
+tbody {
+  background-color: ivory;
+}
+
+
+#id0 {
+
+  margin: 52px 73px;
+}
+
+#id1 {
+
+  margin: 0px 73px ;
+  background-color: #b3d4fc;
+}
+
+/* ---------------------------------------------------------Fin Mi Estilo*/
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

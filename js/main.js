@@ -1,8 +1,9 @@
 
+
 let d = document,
   fecha = new Date(),
   li = d.getElementById("id1")
-arrayUno = [],
+  arrayUno = [],
   dia = fecha.toLocaleString();
 
 
@@ -15,31 +16,30 @@ function datos() {
     ["Eva", "La lluvia llego al mar.", dia],
   ] ;
 
-  li.innerHTML = "<ul>";
-
   for (let i = 0; i < 3; i++ ) {
 
-    li.innerHTML += "<li> Autor:   " +arrayUno[i][0]+ "</li>";
-    li.innerHTML += "<li> Texto:   " +arrayUno[i][1]+ "</li>";
-    li.innerHTML += "<li> Fecha:   " +arrayUno[i][2]+ "</li>";
-    li.innerHTML += "<li> --------------------- <br></li>";
+    mensasje = d.getElementById("th1").innerHTML += arrayUno[i][0]+ "<br><br>";
 
+    mensasje = d.getElementById("th2").innerHTML += arrayUno[i][1]+ "<br><br>";
 
+    mensasje = d.getElementById("th3").innerHTML += arrayUno[i][2]+ "<br><br>";
   }
 
-  li.innerHTML += "</ul>";
-
 }
+
 
 
 function addPost() {
 
   let user = document.getElementById("user").value,
     texto = document.getElementById("text").value,
-
     dia = fecha.toLocaleString();
 
-  arrayUno.push( [user, texto, dia] );
+  arrayUno.push( [user, texto, dia] ); // incorporo al array un unevo post.
+
+  d.getElementById("th1").innerHTML += user+ "<br><br>";
+  d.getElementById("th2").innerHTML += texto+ "<br><br>";
+  d.getElementById("th3").innerHTML += dia+ "<br><br>";
 
 
   document.getElementById("user").value = "";
